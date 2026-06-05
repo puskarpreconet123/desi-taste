@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const isIndexPage = currentPath.includes('index.html') || 
                                 currentPath === '/' || 
                                 currentPath.endsWith('/') || 
-                                (!currentPath.includes('gallery.html') && !currentPath.includes('booking.html'));
+                                (!currentPath.includes('gallery.html') && !currentPath.includes('booking.html') && !currentPath.includes('payment.html'));
 
             if (isIndexPage) {
                 // Scroll spy to find current section
