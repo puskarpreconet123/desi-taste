@@ -1,0 +1,7 @@
+.git
+.github
+.vscode
+Dockerfile
+.dockerignore
+.DS_Store
+Thumbs.db
