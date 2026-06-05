@@ -217,6 +217,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 positionLine(activeLink);
             }
         });
+        
+        // Recalculate positions after fonts and full assets finish loading
+        window.addEventListener('load', updateActiveLink);
+        if (document.fonts) {
+            document.fonts.ready.then(updateActiveLink);
+        }
     });
 
     // ----------------------------------------------------------------------
